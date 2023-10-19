@@ -4,8 +4,226 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
+    <style>
+      header {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="index.js" defer></script>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <header>
+      <img
+        src="./public//images//LogoBlack.jpeg"
+        width="100px"
+        height="100px"
+        alt="Personal Icon"
+      />
+      <nav>
+        <a href="#About">About</a>
+        <a href="#Experience">Experience</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+    </header>
+    <aside>
+      <a href="">Instagram</a>
+      <a href="">Contact</a>
+    </aside>
+    <main>
+      <h1>Salam Aboul Hosn</h1>
+      <section>
+        <h2>About</h2>
+        <p>
+          Hey, my name is Salam Aboul Hosn. I am currently a third year student
+          at the <i>University Of California, San Diego </i>studying
+          <em>Mathematics and Computer Science</em>. I have <br />taken a
+          variety of courses such as advanced data structures, design & analysis
+          ofMathematics and Computer Science algorithms, and object oriented
+          programming allowing<br />
+          me to learn <strong>Java, C, and C++</strong>. I am an extremely self
+          motivated individual and self taught
+          <b>HTML, CSS, Javascript, React, Express, and MongoDB</b> by taking
+          online courses <br />with certification and building projects. I have
+          5 months worth of professional experience as a front end developer in
+          React & Typescript for Smart Twigs Consultancy Group building a full
+          stack web app.
+        </p>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <div>
+          <select>
+            <option value="smart_twigs">Smart Twigs</option>
+            <option value="pending">Pending Inc</option>
+          </select>
+          <div>
+            <h3>Smart Twigs Consultancy Group</h3>
+            <p>April - August 2023</p>
+
+            <ul>
+              <li>
+                Worked on the front-end development team using
+                <span>React & TypeScript</span>
+                to build a user-friendly platform for non-profits and
+                individuals to increase awareness of current social issues.
+              </li>
+              <li>
+                Created custom components increasing developer speed by 50%.
+              </li>
+              <li>
+                Built complex forms in order for users to create organization,
+                programs, and projects.{' '}
+              </li>
+              <li>
+                Used Postman and worked with Rest APIs to save form data and
+                send it to the back end.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Projects</h2>
+        <table border="1">
+          <colgroup>
+            <col />
+            <col />
+          </colgroup>
+          <caption>
+            These are my projects
+          </caption>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+          </tr>
+          <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h2>Skills</h2>
+
+        <details>
+          <summary>Click to Expand Skills</summary>
+          <ol>
+            <li>Java</li>
+            <li>C</li>
+            <li>C++</li>
+          </ol>
+        </details>
+      </section>
+      <section>
+        <h2>Contact Me</h2>
+
+        <fieldset>
+          <legend>Information</legend>
+
+          <form action="">
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="" placeholder="Enter name" />
+            <label for="email">Your email address</label>
+            <input type="text" placeholder="Enter email" name="email" id="" />
+            <label for="message">Your message</label>
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Enter message"
+            ></textarea>
+          </form>
+        </fieldset>
+        <button>Send Message</button>
+      </section>
+    </main>
+
+    <footer>All Rights Reserved to Salam Aboul Hosn</footer>
+
+    <section>
+      <h2>Experiment</h2>
+      <label for="browser">Choose a browser:</label>
+      <input list="browsers" name="browser" id="browser" />
+      <datalist id="browsers">
+        <option value="Chrome"></option>
+        <option value="Firefox"></option>
+        <option value="Safari"></option>
+        <option value="Edge"></option>
+        <option value="Opera"></option>
+      </datalist>
+      <hr />
+      <p><code>&lt;code&gt;</code></p>
+      <template>
+        <p>This is a template content.</p>
+      </template>
+      <figure>
+        <img
+          src="./public//images//LogoBlack.jpeg"
+          width="100px"
+          height="100px"
+          alt="Personal Icon"
+        />
+        <figcaption>Icon</figcaption>
+      </figure>
+      <select>
+        <optgroup label="Group 1">
+          <option>Test 1</option>
+          <option>Test 2</option>
+        </optgroup>
+        <optgroup label="Group 2">
+          <option>Test 3</option>
+          <option>Test 4</option>
+        </optgroup>
+      </select>
+    </section>
+    <pre>
+      for(let i = 0; i < 5; i++) {
+        console.log('Hello')
+      }
+    </pre>
+
+    <picture>
+      <img
+        src="./public//images//LogoBlack.jpeg"
+        width="100px"
+        height="100px"
+        alt="Personal Icon"
+      />
+    </picture>
+
+    <iframe src="https://www.example.com"></iframe>
+
+    <audio controls>
+      <source src="./public//videos//HTML.mp4" type="audio/mpeg" />
+    </audio>
+
+    <video controls width="500px" height="500px">
+      <source src="./public//videos//HTML.mp4" type="video/mp4" />
+    </video>
+
+    <canvas id="myCanvas" width="200" height="100">
+      Your browser does not support the canvas element.
+    </canvas>
+
+    <script>
+      const canvas = document.getElementById('myCanvas');
+      const ctx = canvas.getContext('2d');
+
+      ctx.fillStyle = 'blue';
+      ctx.fillRect(50, 50, 100, 100);
+    </script>
   </body>
 </html>
