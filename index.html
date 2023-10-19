@@ -30,12 +30,17 @@
       </nav>
     </header>
     <aside>
+      <a
+        href="https://www.linkedin.com/in/salam-aboul-hosn-678a04257/"
+        target="_blank"
+        >LinkedIn</a
+      >
       <a href="">Instagram</a>
-      <a href="">Contact</a>
+      <a href="">Twitter</a>
     </aside>
     <main>
       <h1>Salam Aboul Hosn</h1>
-      <section>
+      <section id="About">
         <h2>About</h2>
         <p>
           Hey, my name is Salam Aboul Hosn. I am currently a third year student
@@ -54,7 +59,7 @@
         </p>
       </section>
 
-      <section>
+      <section id="Experience">
         <h2>Experience</h2>
         <div>
           <select>
@@ -87,7 +92,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="Projects">
         <h2>Projects</h2>
         <table border="1">
           <colgroup>
@@ -98,23 +103,40 @@
             These are my projects
           </caption>
           <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
-            <th>Header 3</th>
+            <th>Book Store</th>
+            <th>Game Hub</th>
+            <th>To Do List</th>
           </tr>
           <tr>
-            <td>Row 1, Cell 1</td>
-            <td>Row 1, Cell 2</td>
-            <td>Row 1, Cell 3</td>
-          </tr>
-          <tr>
-            <td>Row 2, Cell 1</td>
-            <td>Row 2, Cell 2</td>
-            <td>Row 2, Cell 3</td>
+            <td>
+              Developed front-end with React and server with Express allowing
+              users to create, read, update & delete books. Integrated MongoDB
+              as the database and used Mongoose to define data models and a
+              schema to store book information efficiently. Leveraged Tailwind
+              for a responsive UI and Axios for data fetching with a Node
+              back-end.
+            </td>
+            <td>
+              Displayed game data from RAWG Database API by using HTTP get
+              requests and useEffect Hook. Responsive website design that adapts
+              to devices such as phones, tablets, computers, etc. Created search
+              bar component, saved its data with useRef, and sent it to the back
+              end to look for searched data. Made custom hooks for organized and
+              modular code. Deployed to production using vercel to allow users
+              to look for their favorite games.
+            </td>
+            <td>
+              Allows users to add and delete daily tasks by storing them into an
+              array. Utilized useState Hook to update the state of the UI using
+              onClick Events. Incorporated Data Structures such as Map to add
+              tasks and Filter to delete tasks from the array. Had clean and
+              readable code by using the ES6 Spread Operator. Deployed to vercel
+              increasing my productivity by 20%.
+            </td>
           </tr>
         </table>
       </section>
-      <section>
+      <section id="Skills">
         <h2>Skills</h2>
 
         <details>
@@ -126,7 +148,7 @@
           </ol>
         </details>
       </section>
-      <section>
+      <section id="Contact">
         <h2>Contact Me</h2>
 
         <fieldset>
