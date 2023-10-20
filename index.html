@@ -17,8 +17,8 @@
     <header>
       <img
         src="./public//images//LogoBlack.jpeg"
-        width="100px"
-        height="100px"
+        width="100"
+        height="100"
         alt="Personal Icon"
       />
       <nav>
@@ -94,14 +94,17 @@
       </section>
       <section id="Projects">
         <h2>Projects</h2>
-        <table border="1">
-          <colgroup>
-            <col />
-            <col />
-          </colgroup>
+
+        <table>
           <caption>
             These are my projects
           </caption>
+          <colgroup>
+            <col />
+            <col />
+            <col />
+          </colgroup>
+
           <tr>
             <th>Book Store</th>
             <th>Game Hub</th>
@@ -154,15 +157,20 @@
         <fieldset>
           <legend>Information</legend>
 
-          <form action="">
+          <form>
             <label for="name">Your name</label>
-            <input type="text" name="name" id="" placeholder="Enter name" />
+            <input type="text" name="name" id="name" placeholder="Enter name" />
             <label for="email">Your email address</label>
-            <input type="text" placeholder="Enter email" name="email" id="" />
+            <input
+              type="text"
+              placeholder="Enter email"
+              name="email"
+              id="email"
+            />
             <label for="message">Your message</label>
             <textarea
               name="message"
-              id=""
+              id="message"
               cols="30"
               rows="10"
               placeholder="Enter message"
@@ -194,8 +202,8 @@
       <figure>
         <img
           src="./public//images//LogoBlack.jpeg"
-          width="100px"
-          height="100px"
+          width="100"
+          height="100"
           alt="Personal Icon"
         />
         <figcaption>Icon</figcaption>
@@ -212,7 +220,7 @@
       </select>
     </section>
     <pre>
-      for(let i = 0; i < 5; i++) {
+      for(let i = 0; i &lt; 5; i++) {
         console.log('Hello')
       }
     </pre>
@@ -220,8 +228,8 @@
     <picture>
       <img
         src="./public//images//LogoBlack.jpeg"
-        width="100px"
-        height="100px"
+        width="100"
+        height="100"
         alt="Personal Icon"
       />
     </picture>
@@ -232,7 +240,7 @@
       <source src="./public//videos//HTML.mp4" type="audio/mpeg" />
     </audio>
 
-    <video controls width="500px" height="500px">
+    <video controls width="500" height="500">
       <source src="./public//videos//HTML.mp4" type="video/mp4" />
     </video>
 
