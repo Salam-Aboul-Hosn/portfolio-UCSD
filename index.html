@@ -4,87 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <script src="index.js" defer></script>
+
     <style>
-      header {
-        display: flex;
-        justify-content: space-between;
+      th {
+        font-size: 1.8rem;
       }
     </style>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src="index.js" defer></script>
   </head>
   <body>
     <header>
-      <img
-        src="./public//images//LogoBlack.jpeg"
-        width="100"
-        height="100"
-        alt="Personal Icon"
-      />
+      <a class="navbar-element" href="#">
+        <img
+          id="logo"
+          src="./public//images//LogoBlack.jpeg"
+          width="50"
+          height="50"
+          alt="Personal Icon"
+        />
+      </a>
       <nav>
-        <a href="#About">About</a>
-        <a href="#Experience">Experience</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Skills">Skills</a>
-        <a href="#Contact">Contact</a>
+        <a class="navbar-element" href="#about">About</a>
+        <a class="navbar-element" href="#experience">Experience</a>
+        <a class="navbar-element" href="#projects">Projects</a>
+        <a class="navbar-element" href="#contact">Contact</a>
       </nav>
     </header>
-    <aside>
-      <a
-        href="https://www.linkedin.com/in/salam-aboul-hosn-678a04257/"
-        target="_blank"
-        >LinkedIn</a
-      >
-      <a href="">Instagram</a>
-      <a href="">Twitter</a>
-    </aside>
+
     <main>
-      <h1>Salam Aboul Hosn</h1>
-      <section id="About">
-        <h2>About</h2>
-        <p>
-          Hey, my name is Salam Aboul Hosn. I am currently a third year student
-          at the <i>University Of California, San Diego </i>studying
-          <em>Mathematics and Computer Science</em>. I have <br />taken a
-          variety of courses such as advanced data structures, design & analysis
-          ofMathematics and Computer Science algorithms, and object oriented
-          programming allowing<br />
-          me to learn <strong>Java, C, and C++</strong>. I am an extremely self
-          motivated individual and self taught
-          <b>HTML, CSS, Javascript, React, Express, and MongoDB</b> by taking
-          online courses <br />with certification and building projects. I have
-          5 months worth of professional experience as a front end developer in
-          React & Typescript for Smart Twigs Consultancy Group building a full
-          stack web app.
-        </p>
+      <section>
+        <h1>Salam Aboul Hosn</h1>
+        <p style="text-align: center">javscript stuff</p>
       </section>
 
-      <section id="Experience">
-        <h2>Experience</h2>
-        <div>
+      <section id="about">
+        <h2 class="header">About</h2>
+        <div id="about-container">
+          <p id="about-paragaph">
+            Hey, my name is Salam Aboul Hosn. I am currently a third year
+            student at the <i>University Of California, San Diego </i>studying
+            <em>Mathematics and Computer Science</em>. I have taken a variety of
+            courses such as advanced data structures, design & analysis of
+            Mathematics and Computer Science algorithms, and object oriented
+            programming allowing me to learn <strong>Java, C, and C++</strong>.
+            I am an extremely self motivated individual and self taught
+            <b>HTML, CSS, Javascript, React, Express, and MongoDB</b> by taking
+            online courses with certification and building projects. I have 5
+            months worth of professional experience as a front end developer in
+            React & Typescript for Smart Twigs Consultancy Group building a full
+            stack web app.
+          </p>
+          <a
+            href="https://www.linkedin.com/in/salam-aboul-hosn-678a04257/"
+            target="_blank"
+          >
+            <img
+              src="./public/images/self.jpeg"
+              alt="Picture of Salam"
+              width="300"
+              id="image-self"
+            />
+          </a>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2 class="header">Experience</h2>
+        <div id="experience-container">
           <select>
             <option value="smart_twigs">Smart Twigs</option>
-            <option value="pending">Pending Inc</option>
+            <option value="MyMicrojourney">MyMicrojourney</option>
           </select>
-          <div>
-            <h3>Smart Twigs Consultancy Group</h3>
-            <p>April - August 2023</p>
-
+          <div class="experience-description-container">
+            <h3 class="job-header">Smart Twigs Consultancy Group</h3>
+            <p class="job-date">April - August 2023</p>
             <ul>
-              <li>
+              <li class="job-description">
                 Worked on the front-end development team using
                 <span>React & TypeScript</span>
                 to build a user-friendly platform for non-profits and
                 individuals to increase awareness of current social issues.
               </li>
-              <li>
+              <li class="job-description">
                 Created custom components increasing developer speed by 50%.
               </li>
-              <li>
+              <li class="job-description">
                 Built complex forms in order for users to create organization,
-                programs, and projects.{' '}
+                programs, and projects.
               </li>
-              <li>
+              <li class="job-description">
                 Used Postman and worked with Rest APIs to save form data and
                 send it to the back end.
               </li>
@@ -92,19 +102,15 @@
           </div>
         </div>
       </section>
-      <section id="Projects">
-        <h2>Projects</h2>
+      <section id="projects">
+        <h2 class="header">Projects</h2>
 
         <table>
-          <caption>
-            These are my projects
-          </caption>
           <colgroup>
             <col />
             <col />
             <col />
           </colgroup>
-
           <tr>
             <th>Book Store</th>
             <th>Game Hub</th>
@@ -139,121 +145,33 @@
           </tr>
         </table>
       </section>
-      <section id="Skills">
-        <h2>Skills</h2>
 
-        <details>
-          <summary>Click to Expand Skills</summary>
-          <ol>
-            <li>Java</li>
-            <li>C</li>
-            <li>C++</li>
-          </ol>
-        </details>
-      </section>
-      <section id="Contact">
-        <h2>Contact Me</h2>
+      <section id="contact">
+        <h2 class="header">Contact Me</h2>
 
-        <fieldset>
-          <legend>Information</legend>
-
-          <form>
-            <label for="name">Your name</label>
-            <input type="text" name="name" id="name" placeholder="Enter name" />
-            <label for="email">Your email address</label>
-            <input
-              type="text"
-              placeholder="Enter email"
-              name="email"
-              id="email"
-            />
-            <label for="message">Your message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="Enter message"
-            ></textarea>
-          </form>
-        </fieldset>
-        <button>Send Message</button>
+        <form>
+          <label for="name">Your name</label>
+          <input type="text" name="name" id="name" placeholder="Enter name" />
+          <label for="email">Your email address</label>
+          <input
+            type="text"
+            placeholder="Enter email"
+            name="email"
+            id="email"
+          />
+          <label for="message">Your message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Enter message"
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
       </section>
     </main>
 
     <footer>All Rights Reserved to Salam Aboul Hosn</footer>
-
-    <section>
-      <h2>Experiment</h2>
-      <label for="browser">Choose a browser:</label>
-      <input list="browsers" name="browser" id="browser" />
-      <datalist id="browsers">
-        <option value="Chrome"></option>
-        <option value="Firefox"></option>
-        <option value="Safari"></option>
-        <option value="Edge"></option>
-        <option value="Opera"></option>
-      </datalist>
-      <hr />
-      <p><code>&lt;code&gt;</code></p>
-      <template>
-        <p>This is a template content.</p>
-      </template>
-      <figure>
-        <img
-          src="./public//images//LogoBlack.jpeg"
-          width="100"
-          height="100"
-          alt="Personal Icon"
-        />
-        <figcaption>Icon</figcaption>
-      </figure>
-      <select>
-        <optgroup label="Group 1">
-          <option>Test 1</option>
-          <option>Test 2</option>
-        </optgroup>
-        <optgroup label="Group 2">
-          <option>Test 3</option>
-          <option>Test 4</option>
-        </optgroup>
-      </select>
-    </section>
-    <pre>
-      for(let i = 0; i &lt; 5; i++) {
-        console.log('Hello')
-      }
-    </pre>
-
-    <picture>
-      <img
-        src="./public//images//LogoBlack.jpeg"
-        width="100"
-        height="100"
-        alt="Personal Icon"
-      />
-    </picture>
-
-    <iframe src="https://www.example.com"></iframe>
-
-    <audio controls>
-      <source src="./public//videos//HTML.mp4" type="audio/mpeg" />
-    </audio>
-
-    <video controls width="500" height="500">
-      <source src="./public//videos//HTML.mp4" type="video/mp4" />
-    </video>
-
-    <canvas id="myCanvas" width="200" height="100">
-      Your browser does not support the canvas element.
-    </canvas>
-
-    <script>
-      const canvas = document.getElementById('myCanvas');
-      const ctx = canvas.getContext('2d');
-
-      ctx.fillStyle = 'blue';
-      ctx.fillRect(50, 50, 100, 100);
-    </script>
   </body>
 </html>
