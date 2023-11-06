@@ -160,22 +160,17 @@ textarea {
 }
 
 button {
-  color: black;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0.55rem;
   display: block;
   padding: 0.375rem 1rem;
-  font-size: 18px;
-  text-decoration: none;
+  font-size: 1rem;
   color: rgb(135, 65, 216);
   background-color: transparent;
-  border: 1px solid rgb(135, 65, 216);
-  transition: 0.8s;
-  overflow: hidden;
-  z-index: 1;
+  border: 0.0625rem solid rgb(135, 65, 216);
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 footer {
